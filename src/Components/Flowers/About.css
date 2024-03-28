@@ -8,14 +8,26 @@
 }
 
 .about-section-text-container {
-  max-width: 1200px; /* Adjust based on your content width */
+  max-width: 100%;/* Adjust based on your content width */
+  text-align: center;
+}
+
+.about-text1 {
+  width: 100%;/* Adjust based on your content width */
+  text-align: center;
+  background-image: cover;
+  background-position: center;
+}
+.about-text2 {
+  width: 100%;/* Adjust based on your content width */
   text-align: center;
 }
 
 .primary-subheading {
   font-size: 2rem;
-  color: #5D3FD3;
+  color: #000000;
   margin-bottom: 20px;
+  margin-left: 140px;
 }
 
 /* Updated styling for individual boxes (flower details) */
@@ -25,6 +37,7 @@
   justify-content: center;
   gap: 40px; /* Increased gap for more space between rows */
   padding: 10px;
+  margin-left: 140px;
 }
 
 .box > div {
@@ -94,24 +107,46 @@ button:hover {
 
 
 
-/* Central alignment and styling for the 'with sympathy' section */
-.green {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.green1 { 
+  height: 500px;
   width: 100%;
-  padding: 20px;
-  margin: 20px 0;
-  background-color: #e9ecef; /* Light grey background for contrast */
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ec76bb;
+  color: white;
+  border-radius: 12px;
+  text-align: left; 
+  padding-left: 550px;
+  padding-top: 170px;
   transition: all 0.3s ease;
 }
 
-.green:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.buttongreen1 {
+  background-color: #282828; /* Цвет фона кнопки */
+  border: none; /* Удаление границы */
+  color: white; /* Цвет текста кнопки */
+  padding: 15px 32px; /* Отступы вокруг текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Удаление подчеркивания текста */
+  display: inline-block; /* Отображение кнопки как блочного элемента */
+  font-size: 16px; /* Размер шрифта */
+  margin: 4px 2px; /* Отступы между кнопками */
+  cursor: pointer; /* Изменение курсора при наведении */
+  border-radius: 15px; /* Радиус скругления углов */
+}
+
+.buttongreen1:hover {
+  background-color: #000000; /* Изменение цвета фона при наведении */
+}
+
+/* Responsive adjustments for better display on smaller screens */
+@media (max-width: 768px) {
+  .sec3 .information_container {
+    flex-direction: column;
+  }
+
+  .info1, .info2 {
+    max-width: 100%;
+  }
 }
 
 /* Styling for the 'sec3' section and its children */
@@ -119,8 +154,9 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  width: 80%;
   margin-top: 20px;
+  margin-left: 140px;
 }
 
 .info1, .info2 {
@@ -143,23 +179,35 @@ button:hover {
   transition: color 0.3s ease;
 }
 
-.info1:hover h2, .info1:hover p, .info2:hover h2, .info2:hover p {
-  color: #5D3FD3; /* Text color change on hover */
-}
 
-/* Styling for 'green2' section similar to 'green' but for distinction */
-.green2 {
-  background-color: #f8f9fa;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.green2 { 
+  height: 500px;
+  width: 100%;
+  background-color: #2d5443;
+  color: white;
+  border-radius: 12px;
+  text-align: left; 
+  padding-left: 550px;
+  padding-top: 170px;
   transition: all 0.3s ease;
 }
 
-.green2:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.buttongreen2 {
+  background-color: #282828; /* Цвет фона кнопки */
+  border: none; /* Удаление границы */
+  color: white; /* Цвет текста кнопки */
+  padding: 15px 32px; /* Отступы вокруг текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Удаление подчеркивания текста */
+  display: inline-block; /* Отображение кнопки как блочного элемента */
+  font-size: 16px; /* Размер шрифта */
+  margin: 4px 2px; /* Отступы между кнопками */
+  cursor: pointer; /* Изменение курсора при наведении */
+  border-radius: 15px; /* Радиус скругления углов */
+}
+
+.buttongreen2:hover {
+  background-color: #000000; /* Изменение цвета фона при наведении */
 }
 
 /* Responsive adjustments for better display on smaller screens */
